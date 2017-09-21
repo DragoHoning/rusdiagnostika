@@ -1975,6 +1975,7 @@ footer .dev p {
 	#services .bgimg2 span {display:none;}
 	#services .bgimg2 {float:none; width:100%; margin-top: 230px;}
 	.topmenu-btn {right:-15px;}
+    .navigation-fix #topmenu .navig-container {right: -15px;}
 }
 @media (max-width:600px) {
 	.contact-left-panel .contactform, .contact-left-panel .contactform + .row {float:none;width:100%;}
