@@ -1,0 +1,161 @@
+[[strip]]
+.capiPolicy {
+    font-size: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	position: relative;
+}
+.capiPolicy .text {
+    margin-left: 30px;
+    text-align: left;
+    display: inline-block;
+}
+.capiPolicy a {
+    text-decoration: none!important;
+    font-size: inherit!important;
+    color: #fff!important;
+	border-bottom: 1px dashed #fff !important;
+}
+.capiPolicy a:hover {
+    border-bottom-style: dotted;
+}
+.capiPolicy .capiCheckbox {
+    font-size: inherit!important;
+    display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	padding-bottom: 0;
+	left: 0; top:4px;
+}
+
+.capiPolicy .capiCheckbox input[type="checkbox"] {
+    margin: 0 4px 0 0;
+    line-height: 12px;
+    width: 19px;
+    height: 19px;
+}
+#capi-policy-text {
+	top: 50%;
+	left:50%;
+	
+}
+#capi-policy-content {
+	text-align:justify;
+}
+
+.capiPolicy .capiCheckbox input[type="checkbox"] {opacity:0; position: relative; z-index: 5; cursor:pointer;}
+.capiPolicy .capiCheckbox .capiCheckboxStyle {
+	display: block;
+	position: absolute;
+	z-index:0;
+	border: 1px solid #000;
+	border-radius:1px;
+	height:19px;
+	width:19px;
+	top: 0;
+    left: 0;
+	padding: 0 !important;
+	background-color: #000;
+	border-radius: 3px;
+	/*background-color: rgb(0, 180, 0);*/
+}
+.capiPolicy .capiCheckbox .capiCheckboxStyle span {
+	position: absolute;
+	background: transparent url(/assets/plugins/capiPolicy/check.png) no-repeat left center;
+	height: 8px;
+	width: 12px;
+	left: 3px;
+	top: 5px;
+	opacity: 0;
+	padding: 0;
+	margin: 0;
+}
+.capiPolicy .capiCheckbox input:checked + .capiCheckboxStyle > span {
+	opacity: 1;
+}
+.capiPolicy .capiCheckbox.black-style .capiCheckboxStyle {
+	background-color: #fff;
+}
+.capiPolicy .capiCheckbox.black-style .capiCheckboxStyle > span {
+	background-position:right center;
+}
+.header-bigpanel-bottom {padding: 20px 0;}
+.header-bigpanel-bottom .form-akciya-block form .capiPolicy {
+	position: absolute;
+	left: 15px;
+}
+.fancybox-inner .contact-offer-form form .capiPolicy {
+	font-size: 10px;
+}
+
+
+#capi-policy-text {
+	width: 700px; 
+	max-width:100%;
+	border-radius: 1px;
+	background: #f9f9f9;
+	position: absolute;
+	left: 50%;
+-moz-transform: translateX(-50%);
+-webkit-transform: translateX(-50%);
+-o-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+transform: translateX(-50%);
+	opacity: 0;
+	z-index: 5;
+	padding: 80px 100px;
+	display: block;
+	/*overflow-y: auto;*/
+}
+#capi-policy-text.vert-center {
+	top: 45%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	max-height: 100%;
+}
+#capi-policy-text h2 {
+    font-size: 38px;
+    line-height: 46px;
+	margin-top: 0;
+    margin-bottom: 30px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#capi-policy-text #modal_close {
+    background: transparent url(/assets/images/sprite.png) no-repeat -442px -176px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 9040;
+    border: 0 none;
+}
+/* Пoдлoжкa */
+#overlayCapiPolicy {
+	z-index:9000; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:rgba(51, 51, 51, 0.9); /* чернaя */
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width: auto;
+    height: auto;
+	cursor:pointer;
+	display:none; /* в oбычнoм сoстoянии её нет) */
+}
+.capi-policy-lock {
+	overflow: visible !important;
+    width: auto;
+}
+.capi-policy-lock body {
+    overflow: hidden !important;
+}
+.capi-policy-lock #overlayCapiPolicy {
+	overflow: auto;
+}
+[[/strip]]
