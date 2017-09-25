@@ -626,7 +626,7 @@ footer .dev p {
 	background-color:#eaeaea;
 }
 .box-methods-item a[class^="methods-link"] {
-	
+	text-align: center;
 }
 .box-methods-item a[class^="methods-link"] .methods-link-icon-anim {
     text-align: center;
@@ -667,7 +667,7 @@ footer .dev p {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#434343', endColorstr='#141f3e',GradientType=0 );
 }
 .box-methods-item .methods-link7 {
-    padding-top: 250px;
+    padding-top: 248px;
     background: #474747 url(/uploads/metods/vik-img.jpg) no-repeat;
     background-position: 0 -36px;
     -webkit-transition: background-position .4s ease;
@@ -679,6 +679,15 @@ footer .dev p {
 .box-methods-item .methods-link-text {
     font-size: 20px;
     color: #fff;
+    padding: 15px 20px 0;
+    height: 75px;
+    position: relative;
+}
+.box-methods-item .methods-link-text span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .box-methods-item .methods-link3 .methods-link-text, .box-methods-item .methods-link6 .methods-link-text {
     color: #444;
