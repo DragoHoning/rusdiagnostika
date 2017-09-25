@@ -158,4 +158,7 @@ transform: translateX(-50%);
 .capi-policy-lock #overlayCapiPolicy {
 	overflow: auto;
 }
+@media (max-width:500px) {
+    #capi-policy-text h2 {font-size: 28px;}
+}
 [[/strip]]

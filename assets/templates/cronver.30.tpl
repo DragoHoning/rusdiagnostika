@@ -98,11 +98,11 @@
 <div class="container">
 	<div id="services" class="block-clear">
 		<div class="row">
-			<div class="col-xl-10 col-lg-12 col-sm-24">
+			<div class="col-xl-10 col-lg-12 col-xs-24">
 				<div class="bgimg1"></div>
 				<div class="bgimg2"><span></span></div>
 			</div>
-			<div class="col-lg-12 col-xl-offset-2">
+			<div class="col-lg-12 col-xl-offset-2 col-xs-24">
 				<div class="box-pagetitle">{$pageExtContent['services_tehnik']->title}</div>
 				<div class="box-text">
 					{$pageExtContent['services_tehnik']->html|strip}
@@ -129,29 +129,57 @@
 		<div class="block-methods-items">
 			<div class="row">
 				<div class="col-xl-6 box-methods-item">
-					<a href="" class="methods-link1"></a>
+					<a href="metods/1/1/rk-radiacionnye-metody-kontrolja/" class="methods-link1">
+                        <div class="methods-link-icon-anim"><embed src="/uploads/metods/RK.svg" class="svg-scene" width="216" height="123" type="image/svg+xml"></div>
+                        <div class="methods-link-text">РК (Радиационные методы контроля)</div>
+                        <div class="methods-link-more"><span>Подробнее</span></div>
+                    </a>
 				</div>
 				<div class="col-xl-6 box-methods-item">
-					<a href="" class="methods-link2"></a>
+					<a href="metods/2/1/uk-ultrazvukovoj-kontrol/" class="methods-link2">
+                        <div class="methods-link-icon-anim"><embed src="/uploads/metods/uk.svg" class="svg-scene" width="172" height="133" type="image/svg+xml"></div>
+                        <div class="methods-link-text">УК (Ультразвуковой контроль)</div>
+                        <div class="methods-link-more"><span>Подробнее</span></div>
+                    </a>
 				</div>
 				<div class="col-xl-6 box-methods-item">
-					<a href="" class="methods-link3"></a>
+					<a href="metods/3/1/kontrol-pronikajushhimi-veshhestvami-pvk/" class="methods-link3">
+                        <div class="methods-link-icon-anim"><embed src="/uploads/metods/pvk.svg" class="svg-scene" width="171" height="95" type="image/svg+xml"></div>
+                        <div class="methods-link-text">Контроль проникающими веществами (ПВК) </div>
+                        <div class="methods-link-more"><span>Подробнее</span></div>
+                    </a>
 				</div>
 				<div class="col-xl-6 box-methods-item">
-					<a href="" class="methods-link4"></a>
+					<a href="metods/4/1/ek-jelektricheskie-metody-nerazrushajushhego-kontrolja/" class="methods-link4">
+                        <div class="methods-link-icon-anim"><embed src="/uploads/metods/EK.svg" class="svg-scene" width="184" height="151" type="image/svg+xml"></div>
+                        <div class="methods-link-text">ЭК (Электрические методы неразрушающего контроля).</div>
+                        <div class="methods-link-more"><span>Подробнее</span></div>
+                    </a>
 				</div>
 				<div class="col-xl-6 box-methods-item">
-					<a href="" class="methods-link5"></a>
+					<a href="metods/5/1/ae-akustiko-jemissionnyj-metod/" class="methods-link5">
+                        <div class="methods-link-icon-anim"><embed src="/uploads/metods/AE.svg" class="svg-scene" width="245" height="163" type="image/svg+xml"></div>
+                        <div class="methods-link-text">АЭ (Акустико эмиссионный метод)</div>
+                        <div class="methods-link-more"><span>Подробнее</span></div>
+                    </a>
 				</div>
 				<div class="col-xl-6 box-methods-item">
-					<a href="" class="methods-link6"></a>
+					<a href="metods/6/1/mpm-metod-magnitnoj-pamjati-metalla/" class="methods-link6">
+                        <div class="methods-link-icon-anim"><embed src="/uploads/metods/mpm.svg" class="svg-scene" width="228" height="114" type="image/svg+xml"></div>
+                        <div class="methods-link-text">МПМ (Метод Магнитной Памяти Металла) </div>
+                        <div class="methods-link-more"><span>Подробнее</span></div>
+                    </a>
 				</div>
 				<div class="col-xl-12 box-methods-item">
-					<a href="" class="methods-link7"></a>
+					<a href="metods/7/1/vik-vizualnyj-i-izmeritelnyj-kontrol/" class="methods-link7">
+                        <div class="methods-link-icon-anim"></div>
+                        <div class="methods-link-text">ВИК (Визуальный и измерительный контроль)</div>
+                        <div class="methods-link-more"><span>Подробнее</span></div>
+                    </a>
 				</div>
 			</div>
-		</div>
-	</div>
+		</div>{*ImageConvert src='/assets/images/aboutimg1.jpg' image_x='1184' image_resize=true image_ratio_y=true jpeg_quality=80*}
+	</div>{Products}
 	
 	<div id="documents" class="block-clear">
 		<div class="box-pagetitle">Нормативная документация</div>

@@ -108,6 +108,9 @@ RewriteRule ^(.+)$ index.php?page=$1 [QSA]
 ## EXPIRES CACHING ##
 
 <IfModule mod_headers.c>
+    # Disable Last-Modified for performance
+    Header unset Last-Modified
+
   Header unset ETag
   # Так как мы посылаем expires заголовки с большим сроком,
   # мы не используем ETag для статичного контента.

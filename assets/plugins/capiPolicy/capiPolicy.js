@@ -44,18 +44,40 @@ $.fn.capiPolicy = function(options) {
 			h_win += o.margin_vert*2;
 		}
 		
-		$('#capi-policy-text').css({marginLeft:o.margin_vert,marginRight:o.margin_vert});
-		
 		if(h_window<h_win) {
 			$('html').addClass('capi-policy-lock');
 			$('#capi-policy-text').removeClass('vert-center');
 			if(o.margin_vert>0) {
 				$('#capi-policy-text').css('margin-bottom',o.margin_vert);
+                $('#capi-policy-text').css({
+                    left:o.margin_vert,
+                    right:o.margin_vert,
+                    width:'auto',
+                    padding:20,
+                    '-moz-transform':'none',
+                    '-webkit-transform': 'none',
+                    '-o-transform': 'none',
+                    '-ms-transform': 'none',
+                    'transform': 'none'
+                });
 			}
 			$('#capi-policy-text').animate({opacity: 1, top: o.margin_vert}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
 		} else {
 			$('html').removeClass('capi-policy-lock');
 			$('#capi-policy-text').addClass('vert-center').css('margin-bottom','');
+            if(o.margin_vert>0) {
+                $('#capi-policy-text').css({
+                    left:'',
+                    right:'',
+                    width:'',
+                    padding:'',
+                    '-moz-transform':'translateX(-50%) translateY(-50%)',
+                    '-webkit-transform': 'translateX(-50%) translateY(-50%)',
+                    '-o-transform': 'translateX(-50%) translateY(-50%)',
+                    '-ms-transform': 'translateX(-50%) translateY(-50%)',
+                    'transform': 'translateX(-50%) translateY(-50%)'
+                });
+            }
 			$('#capi-policy-text').animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
 		}
 	}

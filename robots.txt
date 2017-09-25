@@ -1,6 +1,13 @@
 User-Agent: *
 Disallow: /
-Disallow: /admin/ 
-Disallow: /doc/ 
-Disallow: /lib/  
+Disallow: /admin/
+Disallow: /assets/
+Disallow: /doc/
+Disallow: /modules/
+Disallow: /lib/
+Disallow: /tmp/
+
+Allow: /assets/images/
+Allow: /tmp/cache/
+
 Host: rusdiagnostika.ru
