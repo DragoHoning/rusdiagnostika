@@ -18,7 +18,7 @@ $(document).ready(function () {
     $('#slider-sertificate-items').photobox('a.group', {time: 0});
     $('#slider-objects-items').photobox('a.group', {time: 0});
 
-    $(".form-popup").fancybox({//popup form
+    $(".form-popup,.catalog-popup").fancybox({//popup form
         padding: 0,
         margin : 30,
         width : 374,
@@ -33,26 +33,25 @@ $(document).ready(function () {
         openMethod  : 'dropIn',
         closeMethod   : 'dropOut',
         helpers:  {
-            title: null,
+            title: null
             /*overlay: {
                 locked: false
             }*/
         },
 		tpl: {
-			loading: '<div id="fancybox-loading">'+loadHtml+'</div>',
+			loading: '<div id="fancybox-loading">'+loadHtml+'</div>'
 		},
         afterLoad: function() {
             if($(this.element).attr('data-fancybox-width')!=undefined && $(this.element).attr('data-fancybox-width')!='undefined') {
                 this.width = $(this.element).attr('data-fancybox-width');
             }
+            if($(this.element).hasClass('catalog-popup')) {
+                this.width = 1290;
+            }
             this.title = '<div class="content-title-popup">' + this.title + '</div>';
         },
         beforeShow: function() {
             $('.fancybox-skin').addClass('main-fancy-cont');
-            /*$('.modalblock-inner form').capiPolicy({
-                position: 1,
-                tpl: '<div class="capiPolicy capiActive" style="color:#000; text-align:center; white-space: nowrap; position: relative;"><span class="capiCheckbox"><input type="checkbox" value="1" required="required" checked><span class="capiCheckboxStyle"><span></span></span></span>Согласен с <a href="javascript:void(0);" class="capiShowPolicy">политикой конфиденциальности</a></div>',
-            });*/
         },
         afterShow: function() {
             /*$(".phone_mask").mask("+7 (999) 999-9999");*/
@@ -63,7 +62,7 @@ $(document).ready(function () {
 			formInit('.fancybox-inner .ajax-form form');
 			$('.fancybox-inner #claim-form-box form').capiPolicy({
 				position: 3,
-				tpl: '<div class="capiPolicy capiActive" style="color:#20222a;"><span class="capiCheckbox"><input type="checkbox" value="1" required="required" checked><span class="capiCheckboxStyle"><span></span></span></span><span class="text">Согласен на обработку персональных данных и соглашаюсь с <a href="javascript:void(0);" class="capiShowPolicy">политикой конфиденциальности</a></span></div>',
+				tpl: '<div class="capiPolicy capiActive" style="color:#20222a;"><span class="capiCheckbox"><input type="checkbox" value="1" required="required" checked><span class="capiCheckboxStyle"><span></span></span></span><span class="text">Согласен на обработку персональных данных и соглашаюсь с <a href="javascript:void(0);" class="capiShowPolicy">политикой конфиденциальности</a></span></div>'
 			});
         }
     });
@@ -113,18 +112,19 @@ $(document).ready(function () {
             openMethod  : 'dropIn',
             closeMethod   : 'dropOut',
             helpers:  {
-                title: {type: 'inside', position: 'top'},
+                title: {type: 'inside', position: 'top'}
                 /*overlay: {
                     locked: false
                 }*/
             },
 			tpl: {
-				loading: '<div id="fancybox-loading">'+loadHtml+'</div>',
+				loading: '<div id="fancybox-loading">'+loadHtml+'</div>'
 			},
             afterLoad: function() {
                 this.title = '<div class="fancy-title"><div class="content-title-popup">' + this.title + '</div></div>';
             },
             beforeShow: function() {
+                $('.fancybox-wrap').addClass('popup-compact-text-wrap');
                 if($(this.element).hasClass('popup-compact')) $('.fancybox-skin').addClass('popup-compact');
             }
         };
@@ -335,7 +335,7 @@ $(document).ready(function () {
 						
 							$(initCapiPolicyBox).capiPolicy({
 								position: initCapiPolicyPosition,
-								tpl: '<div class="capiPolicy capiActive" style="color:#20222a;"><span class="capiCheckbox"><input type="checkbox" value="1" required="required" checked><span class="capiCheckboxStyle"><span></span></span></span><span class="text">Согласен на обработку персональных данных и соглашаюсь с <a href="javascript:void(0);" class="capiShowPolicy">политикой конфиденциальности</a></span></div>',
+								tpl: '<div class="capiPolicy capiActive" style="color:#20222a;"><span class="capiCheckbox"><input type="checkbox" value="1" required="required" checked><span class="capiCheckboxStyle"><span></span></span></span><span class="text">Согласен на обработку персональных данных и соглашаюсь с <a href="javascript:void(0);" class="capiShowPolicy">политикой конфиденциальности</a></span></div>'
 							});
 							
                         elem_loader.removeClass('loader-form');
@@ -372,7 +372,7 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 2,
 					centerMode: false,
-					centerPadding: '100px',
+					centerPadding: '100px'
 				}
 			},
 			{
@@ -380,7 +380,7 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 1,
 					centerMode: true,
-					centerPadding: '80px',
+					centerPadding: '80px'
 				}
 			},
 			{
@@ -388,10 +388,10 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 1,
 					centerMode: true,
-					centerPadding: '50px',
+					centerPadding: '50px'
 				}
 			},
-		],
+		]
 	});
 	
 	$('#slider-objects-items').slick({
@@ -409,24 +409,24 @@ $(document).ready(function () {
 				breakpoint: 1250,
 				settings: {
 					slidesToShow: 1,
-					centerPadding: '200px',
+					centerPadding: '200px'
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
 					slidesToShow: 1,
-					centerPadding: '80px',
+					centerPadding: '80px'
 				}
 			},
 			{
 				breakpoint: 700,
 				settings: {
 					slidesToShow: 1,
-					centerPadding: '40px',
+					centerPadding: '40px'
 				}
 			},
-		],
+		]
 	});
 	
 	$('#slider-sertificate-items').slick({
@@ -444,24 +444,24 @@ $(document).ready(function () {
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 3,
-					centerPadding: '100px',
+					centerPadding: '100px'
 				}
 			},
 			{
 				breakpoint: 1023,
 				settings: {
 					slidesToShow: 2,
-					centerPadding: '100px',
+					centerPadding: '100px'
 				}
 			},
 			{
 				breakpoint: 700,
 				settings: {
 					slidesToShow: 1,
-					centerPadding: '60px',
+					centerPadding: '60px'
 				}
 			},
-		],
+		]
 	});
 	/*$('.galery-items').slick({
 		slidesToShow: 3,
@@ -753,6 +753,43 @@ $(function(){
 		});
 	
 	});
+
+    $(window).load(function() {
+        var embed_svg = document.getElementsByClassName('svg-scene');
+        var svgdoc = '';
+        var loadGood = false;
+        $('.box-methods-item a').mouseover(function(event) {
+            embed_svg = $(this).find('.svg-scene')[0];
+            /*var embed_svg = document.getElementsByClassName('svg-scene');
+            var svgdoc = '';
+            var loadGood = false;*/
+            try {
+                svgdoc = $(this).find('.svg-scene')[0].getSVGDocument();
+                loadGood = true;
+            }
+            catch (exception) {
+                console.log('The GetSVGDocument interface is not supported');
+            }
+            if (loadGood === true) {
+                //var obj_svg = svgdoc.getElementsByClassName('anim');
+                var obj_svg = $(svgdoc).find('.anim');
+                obj_svg.each(function(){
+                    var th = $(this);
+                    th.addClass("start");
+                });
+            }
+        }).mouseout(function(event) {
+            if (loadGood === true) {
+                console.log(svgdoc);
+                var obj_svg = $(svgdoc).find('.anim');
+                obj_svg.each(function(){
+                    var th = $(this);
+                    th.removeClass("start");
+                });
+                loadGood = false;
+            }
+        });
+    });
 });
 
 /* FANCYBOX ANIMATION */

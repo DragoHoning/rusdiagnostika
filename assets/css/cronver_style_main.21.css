@@ -112,7 +112,7 @@ header h1 {
 	color:#fff;
 	font-size:48px;
 	font-weight:500;
-	font-family:Lato;
+    font-family: Lato,Tahoma,Arial,Verdana,sans-serif;
 	line-height: 62px;
 	margin-top:24px;
 	margin-bottom:88px;
@@ -334,6 +334,10 @@ header .header-content h1 span {
     font-size: 16px;
     font-weight: 400;
 }
+#claim-form-box .ajax-form > span {
+    display: block;
+    text-align: center;
+}
 #claim-form-box input[type="text"] {
 	width: 100%;
     padding: 15px;
@@ -524,6 +528,7 @@ header .header-content h1 span {
 }
 footer {
 	padding:82px 0;
+    background-color: #fff;
 }
 footer .logo {
 	height:112px;
@@ -565,13 +570,13 @@ footer .dev p {
 	overflow:hidden;
 }
 #charge {
-	margin-top:135px;
+    padding-top:135px;
 	/*padding-bottom:65px;*/
-	margin-bottom:100px;
+	padding-bottom:100px;
 	overflow:hidden;
 }
 #documents {
-	margin-bottom:116px;
+    padding-bottom:116px;
 }
 #slider-documents-items {
 	height:170px;
@@ -667,7 +672,7 @@ footer .dev p {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#434343', endColorstr='#141f3e',GradientType=0 );
 }
 .box-methods-item .methods-link7 {
-    padding-top: 248px;
+    padding-top: 191px;
     background: #474747 url(/uploads/metods/vik-img.jpg) no-repeat;
     background-position: 0 -36px;
     -webkit-transition: background-position .4s ease;
@@ -688,6 +693,25 @@ footer .dev p {
     left: 0;
     right: 0;
     bottom: 0;
+}
+.box-methods-item .methods-link-more {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.box-methods-item .methods-link-more span {
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgba(220, 42, 51, 0.5);
+}
+.box-methods-item a:hover .methods-link-more span {
+    border-bottom-color: #dc2a33;
+}
+.box-methods-item .methods-link2 .methods-link-more span {
+    color: #fff;
+    border-bottom-color: rgba(255,255,255,.5);
+}
+.box-methods-item .methods-link2:hover .methods-link-more span {
+    border-bottom-color: #fff;
 }
 .box-methods-item .methods-link3 .methods-link-text, .box-methods-item .methods-link6 .methods-link-text {
     color: #444;
@@ -788,8 +812,10 @@ footer .dev p {
 	background-color: #fbfbfb;
 }
 #faq {
-	margin-top:192px;
-	margin-bottom:180px;
+	padding-top:192px;
+    padding-bottom:180px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 #contacts {
 	min-height:987px;
@@ -1608,7 +1634,7 @@ footer .dev p {
     box-shadow: none !important;
 }
 .advantage-form-container input[type="submit"], .btnlink-calc, .contact-left-panel .contactform .form-group input[type="submit"] {
-	padding: 21px 20px;
+	padding: 22px 21px;
 	height:61px;
 }
 .advantage-form-container input[type="submit"], .btnlink-calc, .contact-left-panel .contactform .form-group input[type="submit"] {
@@ -1863,7 +1889,7 @@ footer .dev p {
 	header h1, header .box-head-adv-items {margin-left:0;}
 	.box-head-adv-item > strong {height:125px;}
 	.box-head-adv-item > div br {display:none;}
-	header h1 {font-size:40px;}
+	header h1 {font-size:40px; text-align: center;}
 }
 @media (max-width:1600px) {
 	.slider-charge-info strong {display:block; font-size:42px; line-height:50px; height:50px;}
@@ -1946,8 +1972,8 @@ footer .dev p {
 	#about {margin-bottom:240px;}
 	#about .bgimg1 {bottom:0 !important; margin-top: 30px;}
 	#about .bgimg2 {bottom:-160px !important;}
-	#charge {margin-top:100px; margin-bottom:50px;}
-	#faq {margin-top:100px;}
+	#charge {padding-top:100px; padding-bottom:50px;}
+	#faq {padding-top:100px;}
 	.navigation-box {position: fixed; z-index: 50; top: 0; left: 0; right: 0;}
 	.advantage-items > .row > div {height: auto;}
 	.advantage-form-container:before {display:none;}
@@ -2058,29 +2084,34 @@ footer .dev p {
 	footer .logo p {left: 67px; top: 57px; font-size: 14px;}
 	footer .dev {width: 294px; height: 43px; background-size: 470px 376px;}
 	footer .dev p {padding-left: 60px; bottom: -24px; font-size: 14px; text-align: left;}
-	#faq {margin-top: 70px; margin-bottom: 120px;}
+	#faq {padding-top: 70px; padding-bottom: 120px;}
 	#about {padding-bottom: 20px;}
 	#about .bgimg2 {left:0;}
-	#charge {margin-top: 80px;}
+	#charge {padding-top: 80px;}
 	.advantage {padding-top:70px;}
-	#documents {margin-bottom: 55px;}
+	#documents {padding-bottom: 55px;}
 	.block-methods-items {margin-bottom:30px;}
 }
 @media (max-width:544px) {
 	.content-title-popup {font-size: 28px; line-height: 37px;}
-	.box-pagetitle {font-size:38px;}
+	.box-pagetitle {font-size:38px !important;}
 	.slick-slider .slick-arrow {width:70px;}
 	.slick-slider .slick-arrow.slick-prev span {left:6px;}
 	.slick-slider .slick-arrow.slick-next span {right:6px;}
 	.slider-charge-info .slider-charge-info-text .table-cell {display:block; height:auto;}
 	.slider-charge-info * {text-align:center !important;}
 	.slider-charge-info {padding:18px 15px;}
+    header {background-color: transparent;}
+    #video-bg {bottom: auto; height: 100%; position: fixed; z-index: -10;}
+    .navigation-box ~ div.container, #charge, #procedure, #faq {background-color: #fff;}
+    #contacts .contact-left-panel {margin-top: 0;}
 }
 @media (max-width:500px) {
-    header h1 {font-size: 27px;}
+    header h1 {font-size: 27px; line-height: 38px;}
+    .content-title-popup {font-size: 24px;}
 }
 @media (max-width:450px) {
-	.box-pagetitle {font-size:32px;}
+	.box-pagetitle {font-size:32px !important;}
 }
 
 @media (max-width:400px) {
@@ -2089,5 +2120,15 @@ footer .dev p {
 #claim-form-box .claim-form-prefix strong {font-size:22px;}
 #claim-form-box .submit input, .advantage-form-container input[type="submit"], .btnlink-calc {letter-spacing: 1px; padding-left:18px; padding-right:18px;}
 .fancybox-inner #claim-form-box:before {left: -27px; bottom: -8px;}
+    .capiPolicy .capiCheckbox input[type="checkbox"], .capiPolicy .capiCheckbox .capiCheckboxStyle {width: 16px; height: 16px;}
+    .capiPolicy .capiCheckbox .capiCheckboxStyle span {left: 2px; top: 3px;}
+    .capiPolicy .text {margin-left: 20px;}
+    .fancybox-wrap.popup-compact-text-wrap {
+        left: 10px !important;
+        top: 38px !important;
+        width: auto !important;
+        right: 38px !important;
+    }
+    .fancybox-wrap.popup-compact-text-wrap .fancybox-inner {width: auto !important;}
 }
 [[/strip]]

@@ -129,49 +129,49 @@
 		<div class="block-methods-items">
 			<div class="row">
 				<div class="col-xl-6 box-methods-item">
-					<a href="metods/1/1/rk-radiacionnye-metody-kontrolja/" class="methods-link1">
+					<a href="metods/1/1/rk-radiacionnye-metody-kontrolja/" class="methods-link1 catalog-popup fancybox.ajax" data-fancybox-href="metods/1/1/rk-radiacionnye-metody-kontrolja/?showtemplate=false">
                         <div class="methods-link-icon-anim"><embed src="/uploads/metods/RK.svg" class="svg-scene" width="216" height="123" type="image/svg+xml"></div>
                         <div class="methods-link-text"><span>РК (Радиационные <br>методы контроля)</span></div>
                         <div class="methods-link-more"><span>Подробнее</span></div>
                     </a>
 				</div>
 				<div class="col-xl-6 box-methods-item">
-					<a href="metods/2/1/uk-ultrazvukovoj-kontrol/" class="methods-link2">
+					<a href="metods/2/1/uk-ultrazvukovoj-kontrol/" class="methods-link2 catalog-popup fancybox.ajax" data-fancybox-href="metods/2/1/uk-ultrazvukovoj-kontrol/?showtemplate=false">
                         <div class="methods-link-icon-anim"><embed src="/uploads/metods/uk.svg" class="svg-scene" width="172" height="133" type="image/svg+xml"></div>
                         <div class="methods-link-text"><span>УК (Ультразвуковой контроль)</span></div>
                         <div class="methods-link-more"><span>Подробнее</span></div>
                     </a>
 				</div>
 				<div class="col-xl-6 box-methods-item">
-					<a href="metods/3/1/kontrol-pronikajushhimi-veshhestvami-pvk/" class="methods-link3">
+					<a href="metods/3/1/kontrol-pronikajushhimi-veshhestvami-pvk/" class="methods-link3 catalog-popup fancybox.ajax" data-fancybox-href="metods/3/1/kontrol-pronikajushhimi-veshhestvami-pvk/?showtemplate=false">
                         <div class="methods-link-icon-anim"><embed src="/uploads/metods/pvk.svg" class="svg-scene" width="171" height="95" type="image/svg+xml"></div>
                         <div class="methods-link-text"><span>Контроль проникающими <br>веществами (ПВК)</span></div>
                         <div class="methods-link-more"><span>Подробнее</span></div>
                     </a>
 				</div>
 				<div class="col-xl-6 box-methods-item">
-					<a href="metods/4/1/ek-jelektricheskie-metody-nerazrushajushhego-kontrolja/" class="methods-link4">
+					<a href="metods/4/1/ek-jelektricheskie-metody-nerazrushajushhego-kontrolja/" class="methods-link4 catalog-popup fancybox.ajax" data-fancybox-href="metods/4/1/ek-jelektricheskie-metody-nerazrushajushhego-kontrolja/?showtemplate=false">
                         <div class="methods-link-icon-anim"><embed src="/uploads/metods/EK.svg" class="svg-scene" width="184" height="151" type="image/svg+xml"></div>
                         <div class="methods-link-text"><span>ЭК (Электрические методы <br>неразрушающего контроля)</span></div>
                         <div class="methods-link-more"><span>Подробнее</span></div>
                     </a>
 				</div>
 				<div class="col-xl-6 box-methods-item">
-					<a href="metods/5/1/ae-akustiko-jemissionnyj-metod/" class="methods-link5">
+					<a href="metods/5/1/ae-akustiko-jemissionnyj-metod/" class="methods-link5 catalog-popup fancybox.ajax" data-fancybox-href="metods/5/1/ae-akustiko-jemissionnyj-metod/?showtemplate=false">
                         <div class="methods-link-icon-anim"><embed src="/uploads/metods/AE.svg" class="svg-scene" width="245" height="163" type="image/svg+xml"></div>
                         <div class="methods-link-text"><span>АЭ (Акустико эмиссионный <br>метод)</span></div>
                         <div class="methods-link-more"><span>Подробнее</span></div>
                     </a>
 				</div>
 				<div class="col-xl-6 box-methods-item">
-					<a href="metods/6/1/mpm-metod-magnitnoj-pamjati-metalla/" class="methods-link6">
+					<a href="metods/6/1/mpm-metod-magnitnoj-pamjati-metalla/" class="methods-link6 catalog-popup fancybox.ajax" data-fancybox-href="metods/6/1/mpm-metod-magnitnoj-pamjati-metalla/?showtemplate=false">
                         <div class="methods-link-icon-anim"><embed src="/uploads/metods/mpm.svg" class="svg-scene" width="228" height="114" type="image/svg+xml"></div>
                         <div class="methods-link-text"><span>МПМ (Метод Магнитной <br>Памяти Металла)</span></div>
                         <div class="methods-link-more"><span>Подробнее</span></div>
                     </a>
 				</div>
 				<div class="col-xl-12 box-methods-item">
-					<a href="metods/7/1/vik-vizualnyj-i-izmeritelnyj-kontrol/" class="methods-link7">
+					<a href="metods/7/1/vik-vizualnyj-i-izmeritelnyj-kontrol/" class="methods-link7 catalog-popup fancybox.ajax" data-fancybox-href="metods/7/1/vik-vizualnyj-i-izmeritelnyj-kontrol/?showtemplate=false">
                         <div class="methods-link-icon-anim"></div>
                         <div class="methods-link-text"><span>ВИК (Визуальный и измерительный контроль)</span></div>
                         <div class="methods-link-more"><span>Подробнее</span></div>
@@ -179,7 +179,7 @@
 				</div>
 			</div>
 		</div>{*ImageConvert src='/assets/images/aboutimg1.jpg' image_x='1184' image_resize=true image_ratio_y=true jpeg_quality=80*}
-	</div>{Products}
+	</div>
 	
 	<div id="documents" class="block-clear">
 		<div class="box-pagetitle">Нормативная документация</div>
