@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     $(".form-popup,.catalog-popup").fancybox({//popup form
         padding: 0,
-        margin : 30,
+        margin : 35,
         width : 374,
         height : 'auto',
         maxWidth: "100%",
@@ -47,6 +47,7 @@ $(document).ready(function () {
             }
             if($(this.element).hasClass('catalog-popup')) {
                 this.width = 1290;
+                $('.fancybox-wrap').addClass('main-fancy-catalog-wrap');
             }
             this.title = '<div class="content-title-popup">' + this.title + '</div>';
         },
@@ -618,7 +619,7 @@ $(function(){
 		},500);
 	});*/
 	
-	/*$(document).on('click','.portfolio-prevnext a',function(e) {
+	$(document).on('click','.portfolio-prevnext a',function(e) {
 		e.preventDefault();
 		var th_url = $(this).attr('href');
 		$('.fancybox-inner').css('opacity','0.5').append(loadHtml);
@@ -629,7 +630,7 @@ $(function(){
             url: th_url,
             dataType: 'html',
             success: function(data){
-				console.log(data);
+				//console.log(data);
 				setTimeout(function(){
 					$('.fancybox-inner').html(data);
 					$('.fancybox-inner').css('opacity','1');
@@ -649,7 +650,7 @@ $(function(){
                 console.log('error');
 			}
 		});
-	});*/
+	});
 	
 	
     var bottomform_pos = $('#services').offset().top-50,
@@ -780,7 +781,7 @@ $(function(){
             }
         }).mouseout(function(event) {
             if (loadGood === true) {
-                console.log(svgdoc);
+                //console.log(svgdoc);
                 var obj_svg = $(svgdoc).find('.anim');
                 obj_svg.each(function(){
                     var th = $(this);

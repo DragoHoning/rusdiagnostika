@@ -636,6 +636,9 @@ footer .dev p {
 .box-methods-item a[class^="methods-link"] .methods-link-icon-anim {
     text-align: center;
 }
+.box-methods-item a[class^="methods-link"] .methods-link-icon-anim embed {
+    pointer-events: none;
+}
 .box-methods-item .methods-link1 {
     padding-top: 77px;
     background: rgb(67,67,67);
@@ -1859,6 +1862,81 @@ footer .dev p {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
+#product-detail-view .portfolio-prevnext {
+    position: absolute;
+    display: block;
+    min-height: 1px;
+    vertical-align: initial;
+    top: 293px;
+    width: 100%;
+}
+.portfolio-prevnext > div {
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    margin-top: -31px;
+    background: transparent;
+    height: 62px;
+    width: 62px;
+    display: block;
+    border: 0 none;
+    border-radius: 50%;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.portfolio-prevnext .prev-prod {
+    left: -136px;
+}
+.portfolio-prevnext .next-prod {
+    right: -136px;
+}
+.portfolio-prevnext > div a {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 3px solid #fff !important;
+    border-radius: 50%;
+}
+.portfolio-prevnext > div a:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 23px;
+    width: 13px;
+    background: transparent url(/assets/images/sprite.png) no-repeat -270px -103px;
+    top: 17px;
+}
+.portfolio-prevnext .prev-prod a:before {
+    left: 21px;
+}
+.portfolio-prevnext .next-prod a:before {
+    background-position: -284px -103px;
+    left: 24px;
+}
+.portfolio-prevnext > div span {
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    max-width: 160px;
+    display: block;
+    top:100%;
+    margin-bottom: -10px;
+}
+.portfolio-prevnext .prev-prod span {
+    text-align: right;
+    right: 0;
+}
+.portfolio-prevnext .next-prod span {
+    text-align: left;
+    left: 0;
+}
+.main-fancy-catalog-wrap #claim-form-box:before, .main-fancy-catalog-wrap #claim-form-box:after {display: none;}
 /*.col-xl-4-8 {
 	width:20%;
 	float:left;
